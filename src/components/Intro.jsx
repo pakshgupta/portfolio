@@ -18,7 +18,7 @@ const Intro = (props) => {
             
           </p>
           <Button className='btn hireme-btn'>
-            <NavLink to={props.link}>{props.linkName}</NavLink>
+            <NavLink to={props.link} target='_blank'>{props.linkName}</NavLink>
           </Button>
         </div>
         <div className='section-hero-image'>
