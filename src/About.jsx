@@ -9,7 +9,7 @@ const About = () => {
     image: "./images/myimage2.png",
     detail:
       "I'm a web developer passionate about bringing ideas to life through coding, creating diverse and exciting projects. Off the screen, I'm an avid badminton player, relishing the thrill of the game with each swing. Additionally, I find joy in the strategic depth of chess, always eager for the challenge of outmaneuvering opponents on the board. ",
-    link: "https://drive.google.com/file/d/1rQ1hpIEtx_BINVifiBHmOI7ZilocWAPL/view",
+    link: "https://drive.google.com/file/d/1CxmR6WqrF7PRbF5PNAZQj9eMsuaLFxhR/view?usp=sharing",
     linkName: "Resume",
   };
   const Title = styled.h2`
