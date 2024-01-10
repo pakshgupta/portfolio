@@ -62,7 +62,7 @@ const Projects = () => {
       image: "./images/travel.png",
       description:
       "Engineered a comprehensive travel advisory application in React, leveraging Google Maps API and Travel Advisor API from Rapid API. Seamlessly integrated functionalities to display diverse restaurants, hotels, and attractions, complemented by a user-friendly interface. Implemented a sophisticated rating filter feature to enhance user experience, showcasing adept utilization of React components and API integration",
-      link:"https://github.com/pakshgupta/Travel-advisor"
+      link:"https://github.com/pakshgupta/Travel"
     },
     {
       id: 3,
