@@ -46,6 +46,14 @@ const MoreProjectsLink = styled(Link)`
   }
 `;
 
+// Media query for smaller screens
+const ProjectsContainerResponsive = styled(ProjectsContainer)`
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+  }
+`;
+
 const Projects = () => {
   const projects = [
     {

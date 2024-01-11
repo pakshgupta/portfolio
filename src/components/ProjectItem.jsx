@@ -19,11 +19,17 @@ const ProjectContainer = styled.div`
   &:hover {
     transform: translateY(-5px);
   }
+
+  @media (max-width: 768px) {
+    flex-direction: column; /* Change to column layout on smaller screens */
+    height: auto; /* Allow height to adjust based on content */
+  }
 `;
 
 const ProjectImageWrapper = styled.div`
-  margin-right: ${({ isEven }) => (isEven ? '20px' : '0')};
-  margin-left: ${({ isEven }) => (isEven ? '0' : '20px')};
+  margin-right: 0; /* Reset margin for smaller screens */
+  margin-left: 0; /* Reset margin for smaller screens */
+  margin-bottom: 20px; /* Add margin between image and text on smaller screens */
 `;
 
 const ProjectImage = styled.img`
@@ -67,7 +73,7 @@ const ProjectButton = styled(Link)`
   }
 `;
 
-const ProjectItem = ({ image, title, description, link,index }) => {
+const ProjectItem = ({ image, title, description, link, index }) => {
   const isEven = index % 2 === 0;
 
   const containerVariants = {
@@ -91,13 +97,15 @@ const ProjectItem = ({ image, title, description, link,index }) => {
       initial="initial"
       animate="animate"
     >
-      <ProjectImageWrapper isEven={isEven}>
+      <ProjectImageWrapper>
         <ProjectImage src={image} alt={title} />
       </ProjectImageWrapper>
       <ProjectContent>
         <ProjectTitle>{title}</ProjectTitle>
         <ProjectDescription>{description}</ProjectDescription>
-        <ProjectButton to={link} whileHover={{ scale: 1.1 }}>View Project</ProjectButton>
+        <ProjectButton to={link} whileHover={{ scale: 1.1 }}>
+          View Project
+        </ProjectButton>
       </ProjectContent>
     </ProjectContainer>
   );
