@@ -1,14 +1,19 @@
-import React from 'react'
+import React,{useState} from 'react'
 import { NavLink } from 'react-router-dom'
 import Navbar from './Navbar'
 import styled from 'styled-components'
 const Header = () => {
+  const [showMenu, setShowMenu] = useState(false);
+
+ 
   return (
       <MainHeader>
         <NavLink to="/">
             <img src="./images/logo.png" alt="logo" className='logo'/>
         </NavLink>
+      
         <Navbar/>
+       
         </MainHeader>
   )
 }
@@ -24,4 +29,5 @@ justify-content:space-between;
   height: auto;
 }
 `;
+
 export default Header

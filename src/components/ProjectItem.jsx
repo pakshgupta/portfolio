@@ -103,7 +103,7 @@ const ProjectItem = ({ image, title, description, link, index }) => {
       <ProjectContent>
         <ProjectTitle>{title}</ProjectTitle>
         <ProjectDescription>{description}</ProjectDescription>
-        <ProjectButton to={link} whileHover={{ scale: 1.1 }}>
+        <ProjectButton to={link} target="_blank" whileHover={{ scale: 1.1 }}>
           View Project
         </ProjectButton>
       </ProjectContent>

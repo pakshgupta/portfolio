@@ -102,7 +102,7 @@ const Projects = () => {
           />
         ))}
       </ProjectsContainer>
-      <MoreProjectsLink to='https://github.com/pakshgupta'>
+      <MoreProjectsLink to='https://github.com/pakshgupta' target="_blank">
         More Projects
       </MoreProjectsLink>
     </>
