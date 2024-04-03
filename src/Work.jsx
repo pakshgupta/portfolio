@@ -80,6 +80,14 @@ const Projects = () => {
         "Developed a full-stack vegetable marketplace, 'Veggie Bazar,' with a React-based front end and an Express.js backend coupled with MongoDB for database management. Implemented secure payment processing using Stripe, ensuring seamless and safe transactions. Leveraged Crypto.js and JWTwebtoken for robust password authentication and authorization, fortifying user data integrity.",
         link:"https://github.com/pakshgupta/veggie-website"
     },
+    {
+      id: 3,
+      title: "Explore Epic",
+      image: "./images/exploreepic.png",
+      description:
+        "Developed a full-stack Blogging Websote, 'Explore Epic,'  for users to write and share travel stories, prioritizing ease of use and engaging user experience.Integrated MongoDB as the database solution for efficient data storage and retrieval, leveraged Express.js to develop robust APIs for handling CRUD operations.",
+        link:"https://github.com/pakshgupta/Blogging-Website"
+    },
     // Add more projects as needed
   ];
 
